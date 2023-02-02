@@ -1,6 +1,86 @@
 const db = require("../utils/database");
 const { DataTypes } = require("sequelize");
 const User= require("./user.models");
+
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     request_product:
+ *       type: object
+ *       properties:
+ *         name:
+ *           type: string
+ *           example: mochila
+ *         price:
+ *           type: number
+ *           example: 500
+ *         description:
+ *           type: text
+ *           example: description
+ *         availableQty:
+ *           type: number
+ *           example: 50
+ *         status:
+ *           type: boolean
+ *           example: true
+ *         categoryId:
+ *           type: number
+ *           example: 1
+ *         userId:
+ *           type: number
+ *           example: 1
+ *     create_product:
+ *       type: object
+ *       properties:
+ *         name:
+ *           type: string
+ *           example: mochila
+ *         price:
+ *           type: number
+ *           example: 500
+ *         description:
+ *           type: text
+ *           example: description
+ *         availableQty:
+ *           type: number
+ *           example: 5
+ *         status:
+ *           type: boolean
+ *           example: true
+ *         categoryId:
+ *           type: number
+ *           example: 1
+ *     update_product:
+ *       type: object
+ *       properties:
+ *         name:
+ *           type: string
+ *           example: mochila
+ *         price:
+ *           type: number
+ *           example: 500
+ *         description:
+ *           type: text
+ *           example: description
+ *         availableQty:
+ *           type: number
+ *           example: 50
+ *     request_product_delete:
+ *       type: object
+ *       properties:
+ *         message:
+ *           type: string
+ *           example: Producto eliminado 
+ *     securitySchemes:
+ *       bearerAuth:
+ *         type: http
+ *         scheme: Bearer
+ *         bearerFormat: JWT
+ */
+
+
 const Product = db.define(
   "product",
   {
