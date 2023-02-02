@@ -28,6 +28,6 @@ describe("Pruebas para el endpoint de users", () => {
 });
 
 afterAll(() => {
- 
+ server.close();
   db.close();
 })
