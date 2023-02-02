@@ -4,6 +4,7 @@ const cors = require("cors");
 const morgan = require("morgan");
 const routerApi = require("./routes");
 const initModels=require("./models/init-models");
+require("dotenv").config();
 
 const app = express();
 
@@ -15,8 +16,11 @@ initModels(app);
 
 routerApi(app);
 
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to my server" });
+app.get('/', (req, res) => {
+  res.status(200).json({
+    status: "welcome to my server",
+    description: "link de la API", link: process.env.HOST,
+  })
 });
 db.authenticate()
   .then(() => console.log('Autenticación exitosa'))
