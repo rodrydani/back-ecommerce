@@ -35,7 +35,7 @@ const { userRegister, getUser } = require("../controllers");
  *   get:
  *     security:
  *       - bearerAuth: []
- *     summary: See the data of a user in the app
+ *     summary: See the data of a user 
  *     tags: [Users]
  *     parameters:
  *       - in: path
@@ -47,7 +47,7 @@ const { userRegister, getUser } = require("../controllers");
  *         description: user Id
  *     responses:
  *       200:
- *         description: Data displayed successfully
+ *         description: Data displayed 
  *         content:
  *           application/json:
  *             schema:

@@ -51,7 +51,7 @@ const {
  *   get:
  *     security:
  *       - bearerAuth: []
- *     summary: See the data of a product belonging to a user in the app
+ *     summary: See the data of a product
  *     tags: [Products]
  *     parameters:
  *       - in: path
