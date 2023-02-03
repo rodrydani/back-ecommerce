@@ -25,9 +25,6 @@ const User= require("./user.models");
  *         status:
  *           type: boolean
  *           example: true
- *         categoryId:
- *           type: number
- *           example: 1
  *         userId:
  *           type: number
  *           example: 1
@@ -49,9 +46,6 @@ const User= require("./user.models");
  *         status:
  *           type: boolean
  *           example: true
- *         categoryId:
- *           type: number
- *           example: 1
  *     update_product:
  *       type: object
  *       properties:
