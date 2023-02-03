@@ -8,7 +8,7 @@ const { userRegister, getUser } = require("../controllers");
  * /api/v1/user:
  *   post:
  *     summary: Register a new user 
- *     tags: [Users]
+ *     tags: [User]
  *     requestBody:
  *       description: To register a new user you need a username, email and password
  *       required: true
@@ -30,13 +30,13 @@ const { userRegister, getUser } = require("../controllers");
  *                 data:
  *                   type: array
  *                   items:
- *                     $ref: "#/components/schemas/user"
- * /api/v1/users/{id}:
+ *                     $ref: "#/components/schemas/users"
+ * /api/v1/user/{id}:
  *   get:
  *     security:
  *       - bearerAuth: []
  *     summary: See the data of a user 
- *     tags: [Users]
+ *     tags: [User]
  *     parameters:
  *       - in: path
  *         name: id

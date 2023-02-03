@@ -50,6 +50,6 @@ const { userLogin, deleteLogout } = require("../controllers");
  *                   example: user logout
  */
 router.post("/auth/login", userLogin);
-router.delete("/auth/logout", authenticate, deleteLogout);
+router.delete("/auth/logout",  deleteLogout);
 
 module.exports = router;
