@@ -37,7 +37,7 @@ const { createOrder, getOrder } = require("../controllers");
  *   get:
  *     security:
  *       - bearerAuth: []
- *     summary: See the data of the users orders in the app
+ *     summary: See the data of the users
  *     tags: [Order]
  *     parameters:
  *       - in: path
@@ -49,7 +49,7 @@ const { createOrder, getOrder } = require("../controllers");
  *         description: user Id
  *     responses:
  *       200:
- *         description: Data displayed successfully
+ *         description: Data displayed 
  *         content:
  *           application/json:
  *             schema:
