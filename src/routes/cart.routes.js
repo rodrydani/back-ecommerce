@@ -5,7 +5,7 @@ const { addProducts, seeCart, updateCart, deleteCart } = require("../controllers
 
 /**
  * @openapi
- * /api/v1/users/{id}/cart:
+ * /api/v1/user/{id}/cart:
  *   post:
  *     security: 
  *       - bearerAuth: []

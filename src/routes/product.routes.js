@@ -95,7 +95,7 @@ const {
  *                   type: array
  *                   items:
  *                     $ref: "#/components/schemas/request_product"
- * /api/v1/products/{id}:
+ * /api/v1/product/{id}:
  *   get:
  *     security:
  *       - bearerAuth: []

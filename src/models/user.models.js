@@ -22,7 +22,7 @@ const bcrypt = require("bcrypt");
  *       properties:
  *         username:
  *           type: string
- *           example: Rodrigo Miranda
+ *           example: Rodrigo 
  *         email:
  *           type: string
  *           example: rodrigo@email.com
@@ -46,13 +46,13 @@ const bcrypt = require("bcrypt");
  *           example: 1
  *         username:
  *           type: string
- *           example: Rodrigo Miranda
+ *           example: Rodrigo
  *         email:
  *           type: string
  *           example: rodrigo@email.com
  *         token:
  *           type: string
- *           example: "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJvZHJpZ29AZW1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMDgkS1dEdVJYM0k0TElMMmhIN01xRENpT0tmRE5LVHN1SThDbDBnT1N6RlEuOVdUZUhTLnRFNWUiLCJpYXQiOjE2NzUzMDU4MTZ9.aVnqbt77Yy3GcUfcp3JROWduDXQO4e1E2pia1qyLBvT1lHHfW3zOf5ZR10UbnFPgWbfnSnQOXRjQyPQ-HDbuSQ"
+ *           example: eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJvZHJpZ29AZW1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMDgkV0ZKay5GdlNQWlBOV29taG9tOGkzLmtPVmVLdkZBRHlUTHIvdDJ2QVVMbGhvdVdZaUtMTHkiLCJpYXQiOjE2NzUzODUxNTB9.GVAC4T_XuiOtb2dEs2ZsK9w52MrNw5FCVWf65GiuHCU-zZzMHHO_ustTXPNrkBc6Q1fM_tVFup0QWqys5i4DMQ
  *     request_logout:
  *       type: object
  *       properties:
